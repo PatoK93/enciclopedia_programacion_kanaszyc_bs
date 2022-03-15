@@ -1,0 +1,102 @@
+/*Fonts online*/
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
+
+/*Body*/
+body{
+    background-image: url(../img/fondo_libro.jpg);
+    color:black;
+    font-family: "Mystery Quest", cursive;
+}
+
+button{
+    border-radius: 35px;
+    background-color: moccasin;
+}
+
+/*Header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    backdrop-filter: blur(2px);
+}
+
+/*Seteo títulos cabecera*/
+header div p{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+/*Seteo nav*/
+header div nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: larger;
+    font-weight: bolder;
+    margin-right: 1rem;
+}
+
+/*Color Links*/
+a{
+    color: blue;
+}
+
+/*Titulo principal*/
+.txtTitle {
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/*Descripcion principal*/
+.txtDesc {
+    text-align: justify;
+    font-size: larger;
+    font-style: italic;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*Links Varios*/
+.links{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: right;
+    font-size: larger;
+}
+
+ /*Posicionamiento tabla*/
+ .tablePosition{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+ }
+
+/*Texto tabla*/
+.txtTable{
+    font-size: larger;
+}
+
+/*Ventajas*/
+ .ventajas{
+     background-color: green;
+ }
+
+ /*Desventajas*/
+ .desventajas{
+     background-color: red;
+ }
+
+ .txtAbout{
+     text-align: justify;
+     font-size: xx-large;
+     font-style: italic;
+ }

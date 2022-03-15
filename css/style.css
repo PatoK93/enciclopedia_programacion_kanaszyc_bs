@@ -1,0 +1,360 @@
+/***Fonts online***/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/***Seteo general***/
+
+body {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    border-radius: 2rem;
+    background-color: moccasin;
+}
+
+
+/***Grid Index***/
+
+.grid {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    backdrop-filter: blur(2px);
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/*Header*/
+
+.Header {
+    display: grid;
+    grid-template-areas: "headerTitle headerNav";
+}
+
+.HeaderTitle {
+    grid-area: headerTitle;
+}
+
+.HeaderNav {
+    grid-area: headerNav;
+}
+
+
+/*Main*/
+
+.indexMain {
+    display: grid;
+    grid-template-areas: "mainTitle" "mainDesc" "mainLink";
+}
+
+.indexMainTitle {
+    grid-area: mainTitle;
+}
+
+.indexMainDesc {
+    grid-area: mainDesc;
+}
+
+.indexMainLink {
+    grid-area: mainLink;
+}
+
+.pagesMain {
+    display: grid;
+    grid-template-areas: "mainTitle" "mainImg" "mainDesc" "mainLink" "mainTable" "mainVideo";
+}
+
+.pagesMainTitle {
+    grid-area: mainTitle;
+}
+
+.pagesMainImg {
+    grid-area: mainImg;
+}
+
+.pagesMainDesc {
+    grid-area: mainDesc;
+}
+
+.pagesMainLink {
+    grid-area: mainLink;
+}
+
+.pagesMainTable {
+    grid-area: mainTable;
+}
+
+.pagesMainVideo {
+    grid-area: mainVideo;
+}
+
+.aboutMain {
+    display: grid;
+    grid-template-areas: "mainTxt";
+}
+
+.aboutMainTxt {
+    grid-area: mainTxt;
+}
+
+
+/*Footer*/
+
+.footer {
+    display: grid;
+    grid-template-areas: "footerAbout";
+}
+
+.footerAbout {
+    grid-area: footerAbout;
+}
+
+
+/***Flex y box***/
+
+
+/*Seteo títulos cabecera*/
+
+header div p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+
+/*Seteo nav*/
+
+header div nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-right: 1rem;
+}
+
+
+/*Color Links*/
+
+a {
+    color: blue;
+}
+
+
+/*Titulo principal*/
+
+.txtTitle {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+/*Descripcion principal*/
+
+.txtDesc {
+    text-align: justify;
+    font-size: 2rem;
+    font-style: italic;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*Links Varios*/
+
+.links {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: right;
+    font-size: 1rem;
+}
+
+
+/*Posicionamiento tabla*/
+
+.tablePosition {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+
+/*Texto tabla*/
+
+.txtTable {
+    font-size: 2rem;
+}
+
+
+/*Ventajas*/
+
+.ventajas {
+    background-color: green;
+}
+
+
+/*Desventajas*/
+
+.desventajas {
+    background-color: red;
+}
+
+.txtAbout {
+    text-align: justify;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+/***Responsive***/
+
+@media screen and (max-width: 480px) {
+    /*HeaderGrid*/
+    .header {
+        display: grid;
+        grid-template-areas: "headerTitle" "headerNav";
+    }
+    header div nav ul {
+        gap: 0rem;
+        font-size: 1rem;
+    }
+    button {
+        font-size: 0.5rem;
+    }
+    .txtDesc {
+        text-align: left;
+        font-size: 1rem;
+        max-width: 280px;
+    }
+    .txtTitle {
+        text-align: left;
+        font-size: 20px;
+    }
+    img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .links {
+        text-align: left;
+    }
+    table {
+        max-width: 50px;
+    }
+    .ventajas {
+        font-size: 12px;
+    }
+    .desventajas {
+        font-size: 12px;
+    }
+    iframe {
+        max-width: 300px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /*HeaderGrid*/
+    .header {
+        display: grid;
+        grid-template-areas: "headerTitle" "headerNav";
+    }
+    header div nav ul {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    button {
+        font-size: 0.75rem;
+    }
+    .txtDesc {
+        text-align: justify;
+        font-size: 1rem;
+        max-width: 400px;
+    }
+    .txtTitle {
+        text-align: center;
+        font-size: 20px;
+    }
+    img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .links {
+        text-align: right;
+    }
+    table {
+        max-width: 150px;
+    }
+    .ventajas {
+        font-size: 22px;
+    }
+    .desventajas {
+        font-size: 22px;
+    }
+    iframe {
+        max-width: 450px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    /*HeaderGrid*/
+    .header {
+        display: grid;
+        grid-template-areas: "headerTitle" "headerNav";
+    }
+    nav ul {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1.5rem;
+    }
+    .txtDesc {
+        text-align: justify;
+        font-size: 1rem;
+        max-width: 1000px;
+    }
+    .txtTitle {
+        text-align: center;
+        font-size: 40px;
+    }
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .links {
+        text-align: right;
+    }
+    .ventajas {
+        font-size: 30px;
+    }
+    .desventajas {
+        font-size: 30px;
+    }
+    iframe {
+        max-width: 700px;
+        max-height: 400px;
+    }
+}
