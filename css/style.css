@@ -11,9 +11,62 @@ body {
 }
 
 
-/***Imagnes***/
+/***Imagenes***/
 
 img {
     max-height: 200px;
     max-width: 200px;
+}
+
+
+/***Links***/
+
+a:hover {
+    font-size: large;
+}
+
+.linksDerecha {
+    justify-content: right;
+}
+
+
+/***Nav***/
+
+ul {
+    justify-content: end;
+}
+
+
+/***h2***/
+
+.txtCentrado {
+    justify-content: center;
+}
+
+
+/***p**/
+
+.txtJustificado {
+    text-align: justify;
+}
+
+
+/***th***/
+
+th {
+    text-align: center;
+}
+
+
+/***iframe***/
+
+iframe {
+    width: 100%;
+}
+
+
+/***images***/
+
+.imagenCentrada {
+    text-align: center;
 }
