@@ -77,14 +77,9 @@ iframe {
     text-align: center;
 }
 
-img:hover {
+.img:hover {
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
-}
-
-img {
-    align-items: center;
-    align-content: center;
 }
 
 
